@@ -1,0 +1,19 @@
+#!/bin/sh
+# Script for Prime Users that removes unneccessary files
+echo 'autofile remover for prime users'
+echo 'by Bavaria95-Productions
+by バイエルン95-プロダクション'
+sleep 5s
+echo 'if you had started this script as root than you had nothing to do.
+if you had started this script as non root user please stop with "CTRL+C"
+execute "sudo bash" and then start this script'
+sleep 5s
+echo 'removing unneccessary files'
+echo 'job started'
+rm /etc/modprobe.d/gpu-driver.conf
+rm /etc/modules-load.s/gpu-driver.conf
+rm /usr/share/X11/xorg.conf.d/10-nvidia-drm-outputclass.conf
+echo 'job finished'
+sleep 2s
+echo 'exiting'
+exit
